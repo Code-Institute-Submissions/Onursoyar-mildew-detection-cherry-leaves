@@ -2,12 +2,16 @@
 # Mildew Detection in Cherry Leaves
 
 ********************
+
+[Click here to go to live application](https://mildew-detection-leaves.herokuapp.com/)
+
+********************
 ## Introduction
 ********************
 
 
  The customer working for a company in the agricultural sector  is in need and looking for a more efficient and simple method to sort out and process if their crops have been infected with Mildew or not. The active method that they are using is to manually go through and inspect the cherry leaves on their site. This method is both costly and consumes a huge amount of time.
- They purpose of this project will be to simplfy their work through creating a predictive analysis machine learning tool which will be able to inspect and assess the leaf pictures uploaded within a very short amount of time and confirm whether it is infected or healthy. 
+ The purpose of this project will be to simplify their work through creating a predictive analysis machine learning tool which will be able to inspect and assess the leaf pictures uploaded within a very short amount of time and confirm whether it is infected or healthy. 
 
 
 
@@ -77,15 +81,68 @@ To save time in this process, the IT team suggested an ML system that detects in
 ********************
 ## Dashboard Design
 ********************
-#### Streamlit was used for the project dashboard. It has a responsive design with a menu located on the left part of the page. These are the following:
+#### The project dashboard was created using the Streamlit. The menu is located on the left side with a responsive design. The menu is as follows:
 
-*  Quick Project Summary
+* Quick Project Summary
 * Cherry Leaves Visualizer
 * Mildew Detection
 * Project Hypothesis
 * ML Performance Metrics
+********************
+
+![The Menu](/media/dashboard.png)
+
+********************
+### Project Summary
+********************
+On the summary page, general information, project dataset and business requirements can be found. This page provides a short summary on the project, it's purpose and use. A link to this readme file has also been given if the visitor wants a more detailed summary.
+
+![Summary](/media/summary.png)
 
 
+********************
+### Cherry Leaf Visualizer
+********************
+This section is based on the first business requirement. It is provided with three seperate checkboxes as seen on the image below. As these checkboxes are clicked more information of the specific parts will be provided under. The last checkbox creates an image montage based on two categories, healthy and powdery mildew. Once a label is selected it will automatically create a montage based on the selected label.
+
+![Summary](/media/cherryleaf1.png)
+
+![Summary](/media/cherryleaf2.png)
+
+![Summary](/media/cherryleaf3.png)
+
+![Summary](/media/cherryleaf4.png)
+
+![Summary](/media/cherryleaf5.png)
+
+********************
+### Mildew Detection
+********************
+The user can easily upload an image or images whether healthy or infected on this section of the menu using the file uploader. The images will be then analysed and assessed to predict if the provided leaf image is healthy or not. A downloadable report with a table will also be created so that the user can download the report on the analysed images.
+
+
+![Summary](/media/mildewdetection1.png)
+
+![Summary](/media/mildewdetection2.png)
+
+![Summary](/media/mildewdetection3.png)
+
+
+********************
+### Mildew Detection
+********************
+
+This section is provided with the label frequencies for train, validation and test sets. The model history and performance on the test set is displayed.
+
+![Summary](/media/report.png)
+
+********************
+### Project Hypothesis
+********************
+
+This page on the menu provides the project Hypothesis of the Mildew detection in cherry leaves.
+
+![Summary](/media/hypothesis.png)
 
 ********************
 ## Deployment
@@ -94,7 +151,7 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ### Heroku
 
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
+* The App live link is: https://mildew-detection-leaves.herokuapp.com/
 * Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 * The project was deployed to Heroku using the following steps.
 
@@ -149,7 +206,7 @@ To save time in this process, the IT team suggested an ML system that detects in
 ********************
 ## Content 
 
-* [Code Institute Malaria Walk Through Project](https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2021_Q4/courseware/07a3964f7a72407ea3e073542a2955bd/29ae4b4c67ed45a8a97bb9f4dcfa714b/) was heavily used for instructional purposes, and guidance through the development of this project.
+* [Code Institute Malaria Walkthrough Project](https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2021_Q4/courseware/07a3964f7a72407ea3e073542a2955bd/29ae4b4c67ed45a8a97bb9f4dcfa714b/) was heavily used for instructional purposes, and guidance through the development of this project.
 * [Code Institute Streamlit lessons](https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2021_Q4/courseware/d186ae95191f48e9a2151559c7e6f85d/fc2f9892cfa44eee9cc8bf585c21df88/4?activate_block_id=block-v1%3Acode_institute%2BCI_DA_ML%2B2021_Q4%2Btype%40vertical%2Bblock%407636b337caeb4035bd7b5568404802f6) was used as guidance for the dashboard execution in this project.
 
 * [Mildew Detection](https://github.com/Code-Institute-Solutions/milestone-project-mildew-detection-in-cherry-leaves) was forked to provide the base foundation of this project.
@@ -158,8 +215,6 @@ To save time in this process, the IT team suggested an ML system that detects in
 * [Wikipedia](https://en.wikipedia.org/wiki/Powdery_mildew#:~:text=Powdery%20mildew%20is%20a%20fungal,its%20symptoms%20are%20quite%20distinctive.) was used as the resource pertaining to the powdery mildew fungal infection that is at the heart of this project.
 
 * [GyanShashwat1611/WalkthroughProject01](https://github.com/GyanShashwat1611/WalkthroughProject01) github repository was used for code reference and assistance for in the jupyter notebook set up, code and execution; as well as for the app pages design, set up and code
-
-* [valerieoni/mildew-detection](https://github.com/valerieoni/mildew-detection) github repository was used for readme guidance and code reference. 
 
 * [jtm2021/mildewproject](https://github.com/jtm2021/mildewproject) github repository was used for code reference and readme guidance
 
@@ -170,4 +225,4 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ********************
 ## Acknowledgements
-* I would like to thank my mentor ofr his help and motivation. I ahve taken inspiration from the walktrough project 1 and created this project.
+* I would like to thank my mentor for his help and motivation. I have taken the inspiration from the walkthrough project 1 to create this project.
